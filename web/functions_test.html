@@ -1,4 +1,4 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" 
 "http://www.w3.org/TR/html4/strict.dtd">
 
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en">
@@ -12,6 +12,10 @@
         <script src="../functions.js"></script>
         <script type="text/javascript">
             power(2, 64);
+            console.log(wrap1()); // invoke the function variables ('closed over the function-local variables')
+            console.log(wrap2());
+            powerRecursive(2, 128);
+            console.log(finder(24));
         </script>
 
     </body>
