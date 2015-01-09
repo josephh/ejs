@@ -1,0 +1,32 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+"http://www.w3.org/TR/html4/strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>../function_test</title>
+        <meta name="author" content="Joseph Jobbings" />
+        <!-- Date: 2014-11-20 -->
+    </head>
+    <body>
+        <script src="../objects.js"></script>
+        <script type="text/javascript">
+            // arrays
+            arrayPush("right");
+            arrayPush("for");
+            arrayPush("doing");
+            arrayPush("wrong");
+            arrayPush("unwanted");
+            console.log("was " + arrayPop());
+            console.log("c'catted : " + flatten('-'));
+            // objects
+            console.log(entryObj['#tally']);
+            console.log(entryObj.notForKeeping);
+            console.log(entryObj.alsoNotForKeeping);
+            deleteProp('alsoNotForKeeping');
+            console.log(entryObj);
+        </script>
+
+    </body>
+</html>
+
