@@ -1,0 +1,29 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+"http://www.w3.org/TR/html4/strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>../arrays_test</title>
+        <meta name="author" content="Joseph Jobbings" />
+        <!-- Date: 2014-11-18 -->
+    </head>
+    <body>
+        <script src="../arrays.js"></script>
+        <script type="text/javascript">
+            arrayPush("jack");
+            arrayPush("sprat");
+            arrayPush("ate");
+            arrayPush("no");
+            arrayPush("fat");
+            arrayPush("unwanted");
+            console.log(arrayPop("unwanted"));
+            console.log(flatten("-"));
+            console.log(arrayToList([10, 20]));
+            console.log(listToArray(arrayToList([10, 20, 30])));
+            console.log(prepend(10, prepend(20, null)));
+            console.log(nth(arrayToList([10, 20, 30]), 1));
+        </script>
+    </body>
+</html>
+

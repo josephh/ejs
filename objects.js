@@ -6,20 +6,6 @@
 // but
 // e.g. Math['m' + 'a' + 'x'] expressions in square brackets are evaluated
 
-var a = [];
-
-function arrayPush(e) {// use push() to add to the end of an array
-    a.push(e);
-}
-
-function arrayPop() {// use pop to remove last element from an array
-    return a.pop();
-}
-
-function flatten(s) {// flatten to a single string - inserting the supplied separator
-    return a.join(s);
-}
-
 // 1. Create an object via curly brace notation
 // Each property is written as a name, followed by a colon, followed by an expression that provides a value for the property.
 var entryObj = {
@@ -37,3 +23,8 @@ function deleteProp(prop){
     console.log("Property \'notForKeeping\' still available in entryObj? " + ('notForKeeping' in entryObj));
 };
 
+// Javascript loop construct uses 'in', specifically for going over the 
+// properties of an object. 
+    // for (var event in map)
+      // console.log("The value for object mapped to event : " + map[event]);
+      
