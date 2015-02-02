@@ -48,3 +48,17 @@ function chessBoard(symbol) {
 	}
 	console.log(s);
 }
+
+// flatten (or 'flat map')
+var arrays = [[1, 2, 3], [4, 5], [6]];
+console.log(arrays);
+arrays = arrays.reduce(function(a, b){
+  return a.concat(b);});
+console.log("arrays: "+ arrays);
+// achieve the same thing as follows...
+var merged = [];
+merged = merged.concat.apply(merged, arrays);
+console.log("merged: "+ merged);
+
+
+// → [1, 2, 3, 4, 5, 6]
